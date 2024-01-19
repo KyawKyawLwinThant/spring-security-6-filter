@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html th:replace="layout/masterLayout :: layout(~{::main})" xmlns:th="http://www.thymeleaf.org">
+
+<body class="bg-light">
+<main role="main">
+  <div class="container mt-5 p-5">
+    <div class="row my-3 text-center">
+      <div class="col">
+        <h1>Welcome ! Spring MVC Security</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium culpa cumque dolorum earum, esse eum exercitationem facere nemo nihil nobis odit optio pariatur quasi recusandae totam,
+          voluptate voluptates voluptatibus voluptatum.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">UserName: john</h4>
+            <h4 class="card-title">Password: john</h4>
+            <h4 class="card-title">Roles: SUPER_ADMIN</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">UserName: emma</h4>
+            <h4 class="card-title">Password: emma</h4>
+            <h4 class="card-title">Roles: EMPLOYEE_ADMIN</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">UserName: lucas</h4>
+            <h4 class="card-title">Password: lucas</h4>
+            <h4 class="card-title">Roles: DEPARTMENT_READ,DEPARTMENT_WRITE</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">UserName: richard</h4>
+            <h4 class="card-title">Password: richard</h4>
+            <h4 class="card-title">Roles: CUSTOMER_READ</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">UserName: james</h4>
+            <h4 class="card-title">Password: james</h4>
+            <h4 class="card-title">Roles: </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+</body>
+</html>

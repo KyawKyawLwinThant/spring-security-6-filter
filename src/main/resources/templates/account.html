@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html th:replace="layout/masterLayout :: layout(~{::main})" xmlns:th="http://www.thymeleaf.org">
+
+<body class="bg-light">
+<main role="main">
+  <div class="container mt-5">
+    <h3 th:text="${'Current Logged Username:'+ #authentication.name}"></h3>
+    <ul class="list-group" th:each="role : ${#authentication.getAuthorities()}">
+      <li class="list-group-item" th:text="${role.getAuthority()}"></li>
+    </ul>
+  </div>
+</main>
+</body>
+</html>
